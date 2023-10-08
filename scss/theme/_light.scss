@@ -9,7 +9,7 @@ html {
     --top-act-group-bg-color: #fff;
     --top-act-group-shadow: rgba(237, 237, 246, 0.2);
     --top-act-group-separate: #ededf6;
-    @include abstracts.breakpoint(md) {
+    @include abstracts.screen(md) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.2);
     }
@@ -21,5 +21,14 @@ html {
     --top-menu-border-color: #d2d1d6;
     // Side Bar
     --sidebar-bg: #fff;
-    --sidebar-shadow: rgba(200, 200, 200, 0.40);
+    --sidebar-shadow: rgba(200, 200, 200, 0.4);
+    // Category Item
+    --cate-item-bg: #eee;
+    --cate-item-thumb-bg: #fff;
+    --cate-item-title-color: #000;
+    --cate-item-desc-color: #1A162E;
+
+    @include abstracts.screen(md) {
+        --cate-item-bg: #fff;
+    }
 }
