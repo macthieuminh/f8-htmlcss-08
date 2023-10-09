@@ -30,6 +30,12 @@ html.dark {
     --cate-item-title-color: #fff;
     --cate-item-desc-color: #fff;
 
-    @include abstracts.screen(md) {
-    }
+    // Buttons
+    --filter-btn-color: #fff;
+    --filter-btn-bg: #171c28;
+
+    --like-btn-bg: #292e39;
+    // Product
+    --product-card-bg: #171c28;
+    --product-card-shadow: rgba(0, 0, 0, 0.2);
 }

@@ -1,0 +1,36 @@
+@use "../base/mixin" as mix;
+// Filter Button
+.filter-btn {
+    height: 36px;
+    padding: 6px 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    border-radius: 6px;
+    background: var(--filter-btn-bg);
+    color: var(--filter-btn-color);
+    font-size: 14px;
+    font-weight: 700;
+}
+// Like Button
+.like-btn {
+    @include mix.flexCenter;
+
+    width: 50px;
+    height: 50px;
+    background-color: var(--like-btn-bg);
+    border-radius: 50%;
+    box-shadow: 0px 20px 60px rgba(124, 124, 124, 0.2);
+
+    &:not(&--liked) &__icon--liked {
+        display: none;
+    }
+    &--liked &__icon {
+        display: none;
+    }
+    &__icon-liked {
+        margin-top: 6px;
+    }
+}
