@@ -15,12 +15,12 @@
                 <img src="./assets/icons/Arrow/Arrow - Left.svg" alt="Back Button" />
             </button>
             <a href="#!" class="nav-btn d-none d-md-flex icon">
-                <img src="./assets/icons/Buy.svg" alt="Icon" class="nav-btn__icon" />
+                <img src="./assets/icons/Buy.svg" alt="Icon" class="nav-btn__icon " />
                 <span class="nav-btn__title">Card</span>
                 <span class="nav-btn__qnt">3</span>
             </a>
             <a href="#!" class="nav-btn d-none d-md-flex icon">
-                <img src="../assets/icons/Heart.svg" alt="Icon" class="nav-btn__icon" />
+                <img src="../assets/icons/Heart.svg" alt="Icon" class="nav-btn__icon " />
                 <span class="nav-btn__title">Favorite</span>
                 <span class="nav-btn__qnt">3</span>
             </a>
@@ -4422,8 +4422,25 @@
         <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
         <!-- Action -->
         <div class="top-act">
-            <a href="./sign-in.html" class="btn btn--text d-md-none">Sign in</a>
-            <a href="./sign-up.html" class="top-act__sign-up btn btn--primary">Sign up</a>
+            <div class="top-act__group d-md-none top-act__group--single">
+                <button class="top-act__btn">
+                    <img src="./assets/icons/Search.svg" alt="" class="icon top-act__icon" />
+                </button>
+            </div>
+            <div class="top-act__group d-md-none">
+                <button class="top-act__btn">
+                    <img src="./assets/icons/Heart.svg" alt="" class="icon top-act__icon" />
+                    <span class="top-act__title">03</span>
+                </button>
+                <div class="top-act__separate"></div>
+                <button class="top-act__btn">
+                    <img src="./assets/icons/Buy.svg" alt="" class="icon top-act__icon" />
+                    <span class="top-act__title">$65.42</span>
+                </button>
+            </div>
+            <div class="top-act__user">
+                <img src="./assets/img/avatar.jpg" alt="" class="top-act__avatar" />
+            </div>
         </div>
     </section>
     <section class="hero"></section>
