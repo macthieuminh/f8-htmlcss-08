@@ -1,9 +1,14 @@
 @use "../abstracts";
 
 .auth {
+    user-select: none;
+
     display: flex;
     min-height: 100vh;
 
+    @supports (-webkit-touch-callout: none) {
+        min-height: -webkit-fill-available;
+    }
     font-weight: 500;
     line-height: 146.667%;
 
@@ -21,6 +26,8 @@
         justify-content: center;
         gap: 50px;
 
+        background: var(--auth-intro-bg);
+
         &-logo,
         &-next {
             position: absolute;
@@ -34,12 +41,19 @@
             bottom: 50px;
         }
         &-img {
-            max-width: 100%;
+            width: min(424px, 100%);
         }
         &-text {
+            max-width: 412px;
+            text-align: center;
+
             font-size: 1.8rem;
-            font-weight: 500;
             line-height: 144.444%;
+            color: var(--auth-intro-text-color);
+
+            @include abstracts.screen(md) {
+                font-size: 1.5rem;
+            }
         }
     }
     &__content {
@@ -69,6 +83,10 @@
         margin-top: 50px;
 
         font-size: 3rem;
+
+        @include abstracts.screen(md) {
+            font-size: 2.2rem;
+        }
     }
     &__desc {
         margin-top: 20px;
@@ -78,16 +96,28 @@
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 146.667%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
     }
     &__form {
         width: 100%;
         margin-top: 30px;
+
+        @include abstracts.screen(md) {
+            margin-top: 0;
+        }
     }
     &__link {
         color: #0071dc;
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 146.667%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
     }
     &__btn-group {
         display: flex;
@@ -101,9 +131,15 @@
     &__text {
         margin-top: 108px;
 
-        color: #9e9da8;
         font-size: 1.8rem;
+        color: #9e9da8;
         font-weight: 400;
         line-height: 144.444%;
+        @include abstracts.screen(md) {
+            font-size: 1.6rem;
+        }
+        &-link {
+            font-size: inherit;
+        }
     }
 }
