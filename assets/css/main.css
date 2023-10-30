@@ -2354,6 +2354,11 @@ input {
 .form__group {
   margin-top: 30px;
 }
+@media (max-width: 767.98px) {
+  .form__group {
+    margin-top: 20px;
+  }
+}
 .form__group--inline {
   display: flex;
   align-items: center;
@@ -2401,7 +2406,7 @@ input {
   margin-left: 12px;
 }
 .form__input::placeholder {
-  color: #d2d1d6;
+  color: var(--form-placeholder-color);
 }
 .form__pull-right {
   margin-left: auto;
@@ -2489,6 +2494,8 @@ html {
   --filter-form-shadow: rgba(200, 200, 200, 0.4);
   --filter-form-tag-bg: #f8f8fb;
   --auth-content-bg: #fff;
+  --auth-intro-text-color: #9e9da8;
+  --form-placeholder-color: #d2d1d6;
   --footer-text-color: #1a162e;
   --footer-bg-color: #eee;
   --copyright-color: #6c6c72;
@@ -2502,6 +2509,11 @@ html {
 @media (max-width: 767.98px) {
   html {
     --cate-item-bg: #fff;
+  }
+}
+@media (max-width: 767.98px) {
+  html {
+    --auth-intro-text-color: #fff;
   }
 }
 
@@ -2536,6 +2548,10 @@ html.dark {
   --filter-form-shadow: rgba(0, 0, 0, 0.4);
   --filter-form-tag-bg: #171c28;
   --filter-form-arrow: var(--dropdown-arrow-color);
+  --auth-content-bg: #292e39;
+  --auth-intro-bg: #171c28;
+  --auth-intro-text-color: #b9babe;
+  --auth-heading-color: #b9babe;
   --footer-text-color: #fff;
   --footer-bg-color: #171c28;
   --copyright-color: #6c6c72;
@@ -2545,7 +2561,6 @@ html.dark {
     --header-shadow-color: rgba(237, 237, 246, 0.2);
   }
 }
-
 .home__container {
   margin-top: 40px;
 }
@@ -2654,12 +2669,19 @@ html.dark {
   margin: 0 auto;
   padding: 50px 0;
 }
+@media (max-width: 767.98px) {
+  .auth__content-inner {
+    padding: 32px 0;
+  }
+}
 .auth__heading {
   margin-top: 50px;
   font-size: 3rem;
+  color: var(--auth-heading-color);
 }
 @media (max-width: 767.98px) {
   .auth__heading {
+    margin-top: 40px;
     font-size: 2.2rem;
   }
 }
@@ -2702,18 +2724,25 @@ html.dark {
   gap: 30px;
   margin-top: 50px;
 }
+@media (max-width: 767.98px) {
+  .auth__btn-group {
+    margin-top: 40px;
+    gap: 20px;
+  }
+}
 .auth__btn {
   width: 100%;
 }
 .auth__text {
   margin-top: 108px;
   font-size: 1.8rem;
-  color: #9e9da8;
+  color: var(--intro-text-color);
   font-weight: 400;
   line-height: 144.444%;
 }
 @media (max-width: 767.98px) {
   .auth__text {
+    margin-top: 40px;
     font-size: 1.6rem;
   }
 }

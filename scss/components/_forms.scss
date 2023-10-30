@@ -10,6 +10,10 @@ $error-color: #ed4337;
     &__group {
         margin-top: 30px;
 
+        @include abstracts.screen(md) {
+            margin-top: 20px;
+        }
+
         &--inline {
             display: flex;
             align-items: center;
@@ -62,7 +66,8 @@ $error-color: #ed4337;
         }
 
         &::placeholder {
-            color: #d2d1d6;
+           
+            color: var(--form-placeholder-color);
         }
     }
     &__pull-right {
@@ -94,10 +99,10 @@ $error-color: #ed4337;
             font-size: 1.5rem;
             font-weight: 500;
             line-height: 144.444%;
-            
-        @include abstracts.screen(md) {
-            font-size: 1.4rem;
-        }
+
+            @include abstracts.screen(md) {
+                font-size: 1.4rem;
+            }
         }
     }
     &__checkbox:has(:checked) {
