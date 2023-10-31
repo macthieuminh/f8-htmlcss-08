@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +53,7 @@
                                     alt="Error Icon"
                                     class="form__input-icon" />
                             </div>
-                            <p class="form__error">Email chưa đúng định dạng</p>
+                            <p class="form__error">Invalid Email Format</p>
                         </div>
                         <div class="form__group">
                             <div class="form__text-input">
@@ -70,24 +70,7 @@
                                     alt="Error Icon"
                                     class="form__input-icon" />
                             </div>
-                            <p class="form__error">Mật khẩu phải có ít nhất 6 ký tự</p>
-                        </div>
-                        <div class="form__group">
-                            <div class="form__text-input">
-                                <input
-                                    type="password"
-                                    placeholder="Confirm Password"
-                                    class="form__input"
-                                    required
-                                    minlength="6" />
-                                <img src="../assets/icons/Lock.svg" alt="Lock Icon" class="form__input-icon" />
-                                <img
-                                    class="form__error-icon"
-                                    src="../assets/icons/Danger Circle.svg"
-                                    alt="Error Icon"
-                                    class="form__input-icon" />
-                            </div>
-                            <p class="form__error">Mật khẩu phải có ít nhất 6 ký tự</p>
+                            <p class="form__error">Must be at least 6 characters</p>
                         </div>
                         <div class="form__group form__group--inline">
                             <label for="form__checkbox-input" class="form__checkbox">
@@ -98,7 +81,7 @@
                                     class="form__checkbox-input d-none" />
                                 <span class="form__checkbox-label">Set as default card</span>
                             </label>
-                            <a href="#!" class="auth__link form__pull-right">Recovery Password</a>
+                            <a href="./reset-password.html" class="auth__link form__pull-right">Recovery Password</a>
                         </div>
                         <div class="form-group auth__btn-group">
                             <button class="btn btn--primary auth__btn form__submit-btn">Sign In</button>

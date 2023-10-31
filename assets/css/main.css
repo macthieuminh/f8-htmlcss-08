@@ -2446,7 +2446,7 @@ input {
 }
 .form__checkbox:has(:checked)::after {
   left: 2px;
-  top: 5px;
+  top: 4px;
   width: 15px;
   height: 8px;
   border: 2px solid;
@@ -2465,6 +2465,19 @@ input {
   display: none;
   margin-left: 12px;
   animation: shake 0.5s;
+}
+
+.message {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: left;
+}
+.message--success {
+  border: 1.5px solid #46a05c;
+  background: rgba(39, 243, 117, 0.2);
 }
 
 html {
@@ -2698,9 +2711,15 @@ html.dark {
     font-size: 1.4rem;
   }
 }
+.auth__message {
+  margin-top: 30px;
+}
 .auth__form {
   width: 100%;
   margin-top: 30px;
+}
+.auth__form-forgot {
+  margin-top: 10px;
 }
 @media (max-width: 767.98px) {
   .auth__form {
