@@ -54,6 +54,13 @@ html.dark {
     --auth-heading-color: #b9babe;
     @include abstracts.screen(md) {
     }
+
+    // Product Detail
+    --product-detail-bg: #292e39;
+    // Breadcrumbs
+    --breadcrumbs-bg: #171c28;
+    --breadcrumbs-shadow: rgba(23, 28, 40, 0.2);
+
     // Footer
     --footer-text-color: #fff;
     --footer-bg-color: #171c28;
