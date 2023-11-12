@@ -6,7 +6,7 @@
 
     min-height: 80vh;
     padding-bottom: 50px;
-    
+
     background: var(--product-detail-bg);
 }
 .product-container {
@@ -18,7 +18,7 @@
 }
 .prod-info-content {
     border-radius: 20px;
-    background: #fff;
+    background: var(--product-detail-info-content-bg);
 }
 
 .prod-preview {
@@ -75,13 +75,13 @@
         object-fit: contain;
         border: 1.5px solid #9e9da84d;
         border-radius: 8px;
-        cursor: pointer;
         opacity: 0.9;
         transition: opacity 0.3s;
 
-        &:hover {
+        &:not(&--current):hover {
             opacity: 1;
             border-color: #9e9da8;
+            cursor: pointer;
         }
         &--current {
             opacity: 1;
@@ -92,6 +92,7 @@
 
 .prod-info {
     padding: 60px;
+    border-radius: 20px;
     background: var(--product-detail-info-bg);
 
     @include abstracts.screen(xxl) {
@@ -115,7 +116,10 @@
         margin-top: 30px;
     }
     &__tag {
-        background: #ededf6;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+        background: var(--product-detail-tag-bg);
     }
     &__card {
         margin-top: 30px;
@@ -134,14 +138,15 @@
     }
     &__tax {
         padding: 2px 8px;
+        margin-left: 10px;
 
         color: #67b044;
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), #67b044;
+        background: rgb(103 176 68 / 0.2);
+        border-radius: 4px;
 
         font-size: 1.4rem;
         font-weight: 500;
         line-height: 142.857%;
-        margin-left: 10px;
     }
     &__total-price {
         margin: 20px 0;
@@ -178,10 +183,6 @@
     display: flex;
     gap: 16px;
     margin-top: 30px;
-
-    @include abstracts.screen(md) {
-        margin-top: 20px;
-    }
 
     &__icon {
         align-self: flex-start;
