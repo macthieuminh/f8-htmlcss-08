@@ -12,6 +12,12 @@ html.dark {
     @include abstracts.screen(md) {
         --header-shadow-color: rgba(237, 237, 246, 0.2);
     }
+
+    // Header
+    --header-action-dropdown-bg: #2f3441;
+    --header-act-dropdown-shadow: rgba(23, 28, 40, 0.4);
+    --header-act-dropdown-border-color: #171c28;
+    
     // Dropdown
     --dropdown-bg-color: #2f3441;
     --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
@@ -19,11 +25,14 @@ html.dark {
         brightness(90%) contrast(95%);
     --menu-column-icon-color: brightness(0) saturate(100%) invert(98%) sepia(27%) saturate(2050%) hue-rotate(210deg)
         brightness(119%) contrast(96%);
+    
     // Top Menu
     --top-menu-border-color: #171c28;
+    
     // Sidebar
     --sidebar-bg: #292e39;
     --sidebar-shadow: rgba(23, 28, 40, 0.4);
+    
     // Category Item
     --cate-item-bg: #171c28;
     --cate-item-thumb-bg: #292e39;
@@ -77,6 +86,12 @@ html.dark {
 
     // Search Bar
     --search-bar-bg: #171c28;
+
+    // Review card
+    --review-card-bg: #171c28;
+
+    // Text Content
+    --text-content-hr-bg: #3e4043;
 
     // Footer
     --footer-text-color: #fff;

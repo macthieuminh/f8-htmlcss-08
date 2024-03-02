@@ -13,15 +13,23 @@ html {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.2);
     }
+
     // Header
+    --header-action-dropdown-bg: #fff;
+    --header-act-dropdown-shadow: rgba(200, 200, 200, 0.4);
+    --header-act-dropdown-border-color: d2d1d6;
+
     // Dropdown
     --dropdown-bg-color: #fff;
     --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
+
     // Top Menu
     --top-menu-border-color: #d2d1d6;
+
     // Side Bar
     --sidebar-bg: #fff;
     --sidebar-shadow: rgba(200, 200, 200, 0.4);
+
     // Category Item
     --cate-item-bg: #eee;
     --cate-item-thumb-bg: #fff;
@@ -34,21 +42,24 @@ html {
     // Buttons
     --filter-btn-color: #6c6c72;
     --filter-btn-bg: #fff;
-
     --like-btn-bg: #fff;
+
     // Product
     --product-card-bg: #fff;
     --product-card-shadow: rgba(237, 237, 246, 0.2);
+
     // Filter form
     --filter-form-bg: #fff;
     --filter-form-shadow: rgba(200, 200, 200, 0.4);
     --form-tag-bg: #f8f8fb;
+
     // Auth
     --auth-content-bg: #fff;
     --auth-intro-text-color: #9e9da8;
     @include abstracts.screen(md) {
         --auth-intro-text-color: #000;
     }
+
     // Forms
     --form-placeholder-color: #d2d1d6;
 
@@ -69,10 +80,20 @@ html {
     @include abstracts.screen(md) {
         --breadcrumbs-bg: #fff;
     }
+
     // Search Bar
     --search-bar-bg: #fff;
+
     // Review card
     --review-card-bg: #fafafd;
+
+    @include abstracts.screen(md) {
+        --review-card-bg: #fff;
+    }
+
+    // Text Content
+    --text-content-hr-bg: #ebebeb;
+
     // Footer
     --footer-text-color: #1a162e;
     --footer-bg-color: #eee;
