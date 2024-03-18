@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkout | Grocery Mart</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets//fonts/stylesheet.css" />
+        <!-- Icons -->
+        <!-- Styles -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!-- Script -->
+        <script src="assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+        <!-- Product -->
+        <main class="checkout-page">
+            <div class="container">
+                <!-- Search Bar -->
+                <div class="checkout-container">
+                    <div class="search-bar d-none d-md-flex">
+                        <input class="search-bar__input" placeholder="Search for item" type="text" name="" id="" />
+                        <button class="search-bar__submit">
+                            <img src="./assets/icons/Search.svg" alt="Search Icon" class="icon search-bar__icon" />
+                        </button>
+                    </div>
+                </div>
+                <!-- Breadcrumbs -->
+                <div class="checkout-container">
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="./checkout.html" class="breadcrumbs__link"
+                                >Home
+                                <img src="assets/icons/Arrow/ArrowBreadcrumb.svg" alt="Breadcrumb" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="breadcrumbs__link breadcrumbs__link--current">Checkout</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Checkout content-->
+                <div class="checkout-container">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="cart-info">
+                                <div class="cart-info__list">
+                                    <article class="cart-item">
+                                        <a href="./product-detail.html"
+                                            ><img
+                                                src="./assets/img/product/Product-Item-01.png"
+                                                alt=""
+                                                class="cart-item__thumb" />
+                                        </a>
+                                        <div class="cart-item__content">
+                                            <div class="cart-item__content-left">
+                                                <h3 class="cart-item__title">
+                                                    <a href="./product-detail.html"
+                                                        >Coffee Beans - Espresso Arabica And Robusta Beans</a
+                                                    >
+                                                </h3>
+                                                <p class="cart-item__price-wrap">
+                                                    $47.00 | <span class="cart-item__status">In Stock</span>
+                                                </p>
+                                                <div class="cart-item__ctrl">
+                                                    <div class="cart-item__input">
+                                                        LavAzza
+                                                        <img src="./assets/icons/Arrow/arrow-down.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cart-item__content-right"></div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+    </body>
+</html>
